@@ -4,6 +4,12 @@ html {
 nav {
   min-height: 10vh;
 }
+
+#nav-ul a:hover {
+  text-decoration: underline 4px;
+  text-underline-offset: 46px;
+}
+
 .bg-custom-green {
   background-color: #7aa65a;
 }
@@ -86,8 +92,29 @@ nav {
   height: 100%;
   object-fit: cover;
 } */
+.product-img-container {
+}
+.product-img-container img {
+  min-width: 100px;
+  max-width: 160px;
+  min-height: 160px;
+}
 
-@media (min-width: 1250px) {
+.products-container {
+  max-width: 80vw; /* Adjust the width as needed */
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.active {
+  background-color: black !important;
+}
+/* @media (min-width: 1250px) {
   .swiper-slide-products {
     width: 12% !important;
   }
@@ -101,4 +128,4 @@ nav {
     width: 200px;
     object-fit: fill;
   }
-}
+} */

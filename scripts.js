@@ -45,3 +45,14 @@ function showCarousel(groupId) {
 function showNav() {
   document.getElementById("nav-ul").classList.toggle("hidden");
 }
+
+const productButtons = document.querySelectorAll(".product-navigation a");
+
+productButtons.forEach((button) => {
+  button.addEventListener("click", function (event) {
+    productButtons.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    this.classList.add("active");
+  });
+});
