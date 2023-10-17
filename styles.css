@@ -56,9 +56,10 @@ nav {
   margin: auto;
   max-width: fit-content;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1280px) {
   .nav-arrows-container {
     position: absolute;
+    z-index: 10;
     bottom: 10%;
     left: 80px;
     right: auto;
