@@ -97,8 +97,7 @@ nav {
   height: 100%;
   object-fit: cover;
 } */
-.product-img-container {
-}
+
 .product-img-container img {
   min-width: 100px;
   max-width: 160px;
