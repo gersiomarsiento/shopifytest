@@ -50,8 +50,13 @@ nav {
 .hero-img {
   background-image: url("https://s3-alpha-sig.figma.com/img/35e9/e63d/ccf9695660cd1e58ebd97f15bd2589eb?Expires=1698624000&Signature=oGGozuug7T6rVIT36iyng9rjMVZkkt9o6IjMzekpGfheq1KCvoCp-Oxp~bfPcFhAKUrgW4PHx7ol7kXPQmGeBpnfv34fqWFJ8LJrA0Fl6pO3gZk2piJT~CzHaOyKjT5nx-Qp0XaNE~nlh4BUQZpVpU4ZhtXf0ywBSVx~NVjG62tRYnrRlIJkPfisw~DOjmUm4EddJXKD1UGvtV-Gs88hc~DIesYB6FWHiMfqfLh7ledc4RFkJjsPL~sT2ErV5P89PKkuwZ2XtuFuJK3Iavycbn2161KwHt-jU-R~tELMttzjHoEW3UXZKAlYff5ubZVa1miBm~1W~R5H5hOPxz9wFg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
   min-height: 40vh;
-  min-width: 40vh;
   background-position: center;
+  min-width: 40vh;
+}
+@media (min-width: 340px) and (max-width: 440px) {
+  .hero-img {
+    min-width: 32vh;
+  }
 }
 
 .nav-arrows-container {
