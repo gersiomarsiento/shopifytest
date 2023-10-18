@@ -1,6 +1,17 @@
 html {
   font-family: "Proxima Nova";
 }
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 nav {
   min-height: 10vh;
 }
@@ -35,8 +46,7 @@ nav {
 .swiper-hero {
   min-height: 50vh;
 }
-
-.swiper-hero::before {
+.bg-img {
   content: "";
   background-image: url("https://s3-alpha-sig.figma.com/img/15bc/8c0e/9a5a84c078b7ecfe7987f5d55f4dd1fe?Expires=1698624000&Signature=QK1tXI1nus9L33FkZT~J6BD2zreLQ-Hsa4XuTfMiOsdluDSwNXhK9Y2btJMKZFR6wcvw1bEapGT5pnvGHiHGec5dAr-q5~z2-idRMKdJp2iKv~Yjk0lQKbjoWFUxx6FrKwa4BvFjI1mR5SdmDA7D6PkJ7uOCrnu89EQ31eP4~HGrb3DutA0x2bSBAxR4bwvy5LwKqA7dlqdDoNvB94p1XAGTETIWnPYy44hG~WRCNgMNj1FTavVwMO6r1Zt1jvLX~tmnBrIR6HGMI-BVtMqQxrlenxHqvVkGdl8twSBdioJ55mRTFYP4~nbaqcB1GI2vtFGDhIlWSeYnwqrxvd4NaA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
   background-size: cover;
@@ -44,9 +54,23 @@ nav {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  left: 0px;
+  left: -30%;
   opacity: 0.2;
+  width: 200%;
 }
+
+.swiper-hero::before {
+  /* content: "";
+  background-image: url("https://s3-alpha-sig.figma.com/img/15bc/8c0e/9a5a84c078b7ecfe7987f5d55f4dd1fe?Expires=1698624000&Signature=QK1tXI1nus9L33FkZT~J6BD2zreLQ-Hsa4XuTfMiOsdluDSwNXhK9Y2btJMKZFR6wcvw1bEapGT5pnvGHiHGec5dAr-q5~z2-idRMKdJp2iKv~Yjk0lQKbjoWFUxx6FrKwa4BvFjI1mR5SdmDA7D6PkJ7uOCrnu89EQ31eP4~HGrb3DutA0x2bSBAxR4bwvy5LwKqA7dlqdDoNvB94p1XAGTETIWnPYy44hG~WRCNgMNj1FTavVwMO6r1Zt1jvLX~tmnBrIR6HGMI-BVtMqQxrlenxHqvVkGdl8twSBdioJ55mRTFYP4~nbaqcB1GI2vtFGDhIlWSeYnwqrxvd4NaA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2; */
+}
+
 .hero-img {
   background-image: url("https://s3-alpha-sig.figma.com/img/35e9/e63d/ccf9695660cd1e58ebd97f15bd2589eb?Expires=1698624000&Signature=oGGozuug7T6rVIT36iyng9rjMVZkkt9o6IjMzekpGfheq1KCvoCp-Oxp~bfPcFhAKUrgW4PHx7ol7kXPQmGeBpnfv34fqWFJ8LJrA0Fl6pO3gZk2piJT~CzHaOyKjT5nx-Qp0XaNE~nlh4BUQZpVpU4ZhtXf0ywBSVx~NVjG62tRYnrRlIJkPfisw~DOjmUm4EddJXKD1UGvtV-Gs88hc~DIesYB6FWHiMfqfLh7ledc4RFkJjsPL~sT2ErV5P89PKkuwZ2XtuFuJK3Iavycbn2161KwHt-jU-R~tELMttzjHoEW3UXZKAlYff5ubZVa1miBm~1W~R5H5hOPxz9wFg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
   min-height: 40vh;
@@ -75,6 +99,10 @@ nav {
     left: 80px;
     right: auto;
   }
+}
+
+.col-button-container {
+  width: 34%;
 }
 
 .span-help,
