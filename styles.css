@@ -63,7 +63,7 @@ nav {
     height: 68vh;
   }
 }
-@media (min-width: 1280px) and (max-height: 700px) {
+@media (min-width: 1200px) and (max-height: 800px) {
   .swiper-slide {
     height: 90vh;
   }
