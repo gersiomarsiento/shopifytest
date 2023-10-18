@@ -77,9 +77,10 @@ nav {
   background-position: center;
   min-width: 40vh;
 }
-@media (min-width: 340px) and (max-width: 440px) {
+@media (min-width: 440px) and (max-width: 1040px) {
   .hero-img {
-    min-width: 32vh;
+    width: 60vw;
+    max-width: 500px !important;
   }
 }
 
